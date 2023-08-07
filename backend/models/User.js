@@ -28,7 +28,9 @@ export const User = db.define('user', {
     telefono: {
         type: Sequelize.STRING,
         required: true
-    },
+    }
     
-
+}, {
+    freezeTableName: true,
+    tableName: 'users_test_carlos_eduardo_talavera_rivera'
 })
